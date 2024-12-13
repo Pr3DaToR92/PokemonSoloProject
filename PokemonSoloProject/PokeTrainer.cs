@@ -9,15 +9,14 @@ namespace PokemonSoloProject
     internal class PokeTrainer
     {
         private string _name;
-        private string _startPokemon;
+        public Pokemon StartPokemon;
         private int _cash;
         private int _pokeBalls;
         private int _potion;
 
-        public PokeTrainer(string name, string startPokemon)
+        public PokeTrainer(string name)
         {
             _name = name;
-            _startPokemon = startPokemon;
         }
     }
 }

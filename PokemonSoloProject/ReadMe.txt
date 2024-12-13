@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 Plan
 1. Lage ett enkelt brukergrensesnitt. (Meny)
 2. Legge til nødvendige klasser.
-3. Lag funksjoner til de forskjellige klassen så de kan samhandle med hverandre.
+3. Lag funksjoner til de forskjellige klasser så de kan samhandle med hverandre.
 	
 	-Valg 1: Brukernavn og startpokemon. (Opprette bruker)
 	-Valg 2: Kjempe og fange Pokemon i FightingPit.

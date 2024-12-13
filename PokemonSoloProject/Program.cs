@@ -4,6 +4,7 @@ Pokemon starter1 = new Pokemon("Pikachu", "lightning", 100, 5);
 Pokemon starter2 = new Pokemon("Bulbasaur", "Grass", 100, 5);
 Pokemon starter3 = new Pokemon("Charmander", "Fire", 100, 5);
 
+PokeTrainer trainer = new PokeTrainer("Peter");
 Meny();
 void Meny()
 {
@@ -19,13 +20,13 @@ void Meny()
             case "1": ChooseStartPokemon();
                 break;
             case "2":
-                break;
+                break; 
             case "3":
                 break;
             case "4":
                 break;
             case "5": 
-                Meny(); 
+                Meny();
                 Console.Clear();
                 break;
         }
@@ -36,11 +37,11 @@ void ChooseStartPokemon()
     string input;
 
     Console.WriteLine("Trykk 1 for å velge " + starter1._name);
-    
+    trainer.StartPokemon = starter1;
     Console.WriteLine("Trykk 2 for å velge " + starter2._name);
-    
+    trainer.StartPokemon = starter2;
     Console.WriteLine("Trykk 3 for å velge " + starter3._name);
-    
+    trainer.StartPokemon = starter3;
     Console.WriteLine("Trykk 4 for å gå til Meny");
     input = Console.ReadLine();
     Console.Clear();
