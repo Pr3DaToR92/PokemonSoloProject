@@ -8,10 +8,16 @@ namespace PokemonSoloProject
 {
     internal class PokeTrainer
     {
+        private string _name;
+        private string _startPokemon;
+        private int _cash;
+        private int _pokeBalls;
+        private int _potion;
 
-        public PokeTrainer()
+        public PokeTrainer(string name, string startPokemon)
         {
-
+            _name = name;
+            _startPokemon = startPokemon;
         }
     }
 }

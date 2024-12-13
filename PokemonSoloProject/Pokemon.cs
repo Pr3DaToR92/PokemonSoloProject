@@ -8,17 +8,19 @@ namespace PokemonSoloProject
 {
     internal class Pokemon
     {
-        private string _name = "";
-        private string _type = "";
+        public string _name { get; private set; }
+        private string _type;
         private int _hp;
         private int _stamina;
         private int _lvl;
         private int _strength;
 
-        public Pokemon(string name, string type)
+        public Pokemon(string name, string type, int hp, int lvl)
         {
             _name = name;
             _type = type;
+            _hp  = hp;
+            _lvl = lvl;
         }
     }
 }
